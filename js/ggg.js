@@ -495,8 +495,8 @@ const contractAbi = [
           },
         ];
         const contractAddress = "0x3D717A2B5EB740981C5e571446651C1E78D20eE9";
-        const minimumContribute = 0.001;
-        const maximumContribute = 2;
+        const minimumContribute = 0.1;
+        const maximumContribute = 20;
         async function connectMetamask() {
           let web3Provider = null;
           console.log("[web3] getting provider...");
@@ -560,7 +560,7 @@ const contractAbi = [
   
         async function buyTokens() {
           let amount = document.getElementById("presaleAmount").value;
-          if (amount < 0.001) {
+          if (amount < 0.1) {
             alert("Minium " + minimumContribute);
             return;
           }
@@ -576,7 +576,7 @@ const contractAbi = [
             document.getElementById("disabledButton").disabled = false;
             document.cookie = "tokensBought=true";
           }
-          if (amount > 0.001) {
+          if (amount > 0.1) {
             await buyTokens();
           }
         }
