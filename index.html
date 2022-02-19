@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>JBX Presale</title>
+    <link href="css/app.6352e2ef.css" rel="preload" as="style">
+    <link href="css/app.6352e2ef.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ant-card ant-card-bordered">
+        <div class="ant-card-body">
+            <div data-show="true" class="ant-alert ant-alert-warning ant-alert-no-icon" role="alert">
+                <div class="ant-alert-content">
+                    <div class="ant-alert-message"> Make sure the website is JBX.fun! </div>
+                    <div class="ant-alert-description"></div>
+                </div>
+            </div>
+            <form>
+                <div class="has-text-centered" id="clockdiv">
+                    <p class="mb-2" id="pre_status">加入JBX预售</p>
+                <div class="pb-4">
+                    <div
+                        class="ant-progress ant-progress-line ant-progress-status-active ant-progress-default mt-4 mb-2">
+                        <div class="ant-progress-outer">
+                            <div class="ant-progress-inner">
+                                <div class="ant-progress-bg" id="myBar"
+                                    style="width: 98.27%; height: 15px; background: rgb(72, 199, 116);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-flex is-align-items-center is-size-7">
+                        <div class="is-flex-grow-1" id="MyValue">393.08 BNB </div>
+                        <div class="is-flex-grow-1 has-text-right" id="maxValue">400 BNB </div>
+                    </div>
+                </div>
+                <div class="field in_progress"><label class="label">买入数量 (最大: <span class="maxBuy">5</span>
+                        BNB)</label>
+                    <div class="control">
+                        <div style="position: relative;"><input id="presaleAmount" class="input" type="number"
+                                placeholder="0"><a class="mr-2" target="_blank" rel="noreferrer nofollow"
+                                style="position: absolute; right: 8px; top: 4px;"><b>MAX</b></a></div>
+                        <p class="help is-info" id="reserved-amount-id"></p>
+                    </div>
+                    <p style="color: skyblue;">预售价格: 1 BNB = 100 JBX</p>
+                </div><button type="button" id="buybuybuy" class="in_progress ant-btn ant-btn-primary"
+                    ant-click-animating-without-extra-node="false"><svg stroke="currentColor" fill="currentColor"
+                        stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 0 0-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z">
+                        </path>
+                    </svg><span class="ml-2" id="buy_title" onclick="buyTokens()">买入</span></button>
+                <!---->
+                <!---->
+                <!---->
+            </form>
+            <form></form>
+        </div>
+    </div>
+    <script src="/js/web3.min.js"></script>
+    <script src="/js/ggg.js"></script>
+</body>
+
+</html>
